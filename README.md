@@ -1,7 +1,8 @@
 # micro-aes
 
+[![GitHub release](https://img.shields.io/github/release/SmarterUM/micro-aes.svg)](https://github.com/SmarterUM/micro-aes/releases/tag/v1.0.0)
 [![Build Status](https://travis-ci.org/SmarterUM/micro-aes.svg?branch=master)](https://travis-ci.org/SmarterUM/micro-aes)
-![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+[![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/SmarterUM/micro-aes/blob/master/LICENSE)
 
 A permissively licensed AES implementation optimised for running on micro-controllers.
 
