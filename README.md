@@ -11,12 +11,17 @@ A permissively licensed AES implementation optimised for running on micro-contro
 ## API
 
 ```C
+// AES-256
 void aes_256_init    (aes_256_context_t *context, uint8_t key[32]);
 void aes_256_encrypt (aes_256_context_t *context, uint8_t block[16]);
 void aes_256_decrypt (aes_256_context_t *context, uint8_t block[16]);
+
+// AES-192
 void aes_192_init    (aes_192_context_t *context, uint8_t key[24]);
 void aes_192_encrypt (aes_192_context_t *context, uint8_t block[16]);
 void aes_192_decrypt (aes_192_context_t *context, uint8_t block[16]);
+
+// AES-128
 void aes_128_init    (aes_128_context_t *context, uint8_t key[16]);
 void aes_128_encrypt (aes_128_context_t *context, uint8_t block[16]);
 void aes_128_decrypt (aes_128_context_t *context, uint8_t block[16]);
