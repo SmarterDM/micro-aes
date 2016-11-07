@@ -1,0 +1,10 @@
+language: python
+
+python:
+    - 2.7
+
+script:
+    - cd test
+    - gcc encrypt.c ../aes.c -o encrypt
+    - python test.py
+  
