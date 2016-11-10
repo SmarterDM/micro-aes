@@ -9,6 +9,12 @@ A permissively licensed AES implementation optimised for running on micro-contro
 
 This library has developed been developed and open sourced by [AndrewCarterUK ![(Twitter)](http://i.imgur.com/wWzX9uB.png)](https://twitter.com/AndrewCarterUK) from [Smart Carbon Control](http://www.smartcarboncontrol.com/). We are always on the lookout for programming talent, so please [message me](https://twitter.com/AndrewCarterUK) if you are interested in this sort of work.
 
+## License
+
+Like all technology firms, here at [Smart Carbon Control](http://www.smartcarboncontrol.com/) we rely heavily on open source software. In turn, we like to contribute back to the open source community when we can. This library is provided free of charge, under the terms of the [MIT license](https://github.com/SmarterUM/micro-aes/blob/master/LICENSE).
+
+Although there is no obligation to do so, we would really appreciate it if you could [get in touch](https://twitter.com/AndrewCarterUK) and let us know how you are using our software.
+
 ## Features
 
 - Does not use dynamic memory allocation
