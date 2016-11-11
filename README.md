@@ -29,6 +29,8 @@ This library provides the basic AES operations for encrypting and decrypting dat
 
 The two most simplest modes are [ECB (not very secure)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#ECB) and [CBC (much more secure)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC).
 
+A usage example in CBC mode is [presented below](#usage-example-cipher-block-chaining-cbc).
+
 ## API
 
 ```C
@@ -49,6 +51,8 @@ void aes_128_decrypt (aes_128_context_t *context, uint8_t block[16]);
 ```
 
 ## Usage Example: Cipher Block Chaining (CBC)
+
+The functions below show an example implementation of [CBC mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC) using this AES library. The `init()` function must be called again between the encryption and decryption procedures.
 
 ```C
 aes_128_context_t context;
@@ -81,7 +85,7 @@ void encrypt(uint8_t block[16])
 
 void decrypt(uint8_t block[16])
 {
-  char temp_vector[16];
+  uint8_t temp_vector[16];
   int i;
  
   // Copy the cipher output to the temporary vector
