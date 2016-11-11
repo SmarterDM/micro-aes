@@ -29,7 +29,7 @@ This library provides the basic AES operations for encrypting and decrypting dat
 
 The two most simplest modes are [ECB (not very secure)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#ECB) and [CBC (much more secure)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC).
 
-A usage example in CBC mode is [presented below](#usage-example-cipher-block-chaining-cbc).
+An example implementation of CBC mode is [presented below](#usage-example-cipher-block-chaining-cbc).
 
 ## API
 
