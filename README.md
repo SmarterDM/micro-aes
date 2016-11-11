@@ -21,6 +21,14 @@ Although there is no obligation to do so, we would really appreciate it if you c
 - Uses timing-safe algorithms in place of lookup tables (where possible) to reduce code size
 - API designed for use in a low memory environment (cipher text overwrites plain text on encryption)
 
+## Important Note
+
+This library provides the basic AES operations for encrypting and decrypting data. There are different ways to apply a block cipher (called the modes of operation), but this library does not deal with them.
+
+**It is very important to understand these modes of operation if you intend to use AES encryption (or any block cipher)**.
+
+The two most simplest modes are [ECB (not very secure)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#ECB) and [CBC (much more secure)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC).
+
 ## API
 
 ```C
