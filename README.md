@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/SmarterUM/micro-aes.svg?branch=master)](https://travis-ci.org/SmarterUM/micro-aes)
 [![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/SmarterUM/micro-aes/blob/master/LICENSE)
 
-A permissively licensed AES implementation optimised for running on micro-controllers.
+A permissively licensed Advanced Encryption Standard (AES) implementation optimised for running on micro-controllers.
 
 This library has developed been developed and open sourced by [AndrewCarterUK ![(Twitter)](http://i.imgur.com/wWzX9uB.png)](https://twitter.com/AndrewCarterUK) from [Smart Carbon Control](http://www.smartcarboncontrol.com/). We are always on the lookout for programming talent, so please [message me](https://twitter.com/AndrewCarterUK) if you are interested in this sort of work.
 
