@@ -1,4 +1,5 @@
-import sys, subprocess
+import sys
+import subprocess
 
 files = [
   ["ECBVarTxt256.rsp", "ECBVarKey256.rsp", "ECBKeySbox256.rsp"],
@@ -8,20 +9,21 @@ files = [
 
 tests = 0
 
+
 def test_file(file_path, size):
-  global tests
+    global tests
 
-  with open(file_path, "r") as file:
-    lines = file.readlines()
+    with open(file_path, "r") as file:
+        lines = file.readlines()
 
-  decrypt = 0
-  key = None
-  plainText = None
-  cipherText = None
+    decrypt = 0
+    key = None
+    plainText = None
+    cipherText = None
 
-  for line in lines:
-    if line.startswith("KEY"):
-      key = line[len("KEY = "):].strip()
+    for line in lines:
+        if line.startswith("KEY"):
+            key = line[len("KEY = "):].strip()
     elif line.startswith("PLAINTEXT"):
       plainText = line[len("PLAINTEXT = "):].strip()
     elif line.startswith("CIPHERTEXT"):
@@ -30,7 +32,7 @@ def test_file(file_path, size):
       decrypt = 1
 
     if key != None and plainText != None and cipherText != None:
-      command = "./encrypt -k " + key
+        command = "./encrypt -k " + key
 
       if decrypt:
         command += " -b " + cipherText + " -d"
@@ -59,7 +61,7 @@ def test_file(file_path, size):
       key = None
       plainText = None
       cipherText = None
-      
+
   return
 
 test_file(files[0][0], 256)
@@ -75,4 +77,3 @@ test_file(files[2][1], 128)
 test_file(files[2][2], 128)
 
 print str(tests) + " have passed successfully"
-
