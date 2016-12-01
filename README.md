@@ -1,4 +1,4 @@
-# micro-aes
+ # micro-aes
 
 [![GitHub release](https://img.shields.io/github/release/SmarterUM/micro-aes.svg)](https://github.com/SmarterUM/micro-aes/releases/tag/v1.0.0)
 ![C](https://img.shields.io/badge/langauge-C-blue.svg)
@@ -70,7 +70,7 @@ void init(uint8_t key[16], uint8_t initialization_vector[16])
 void encrypt(uint8_t block[16])
 {
   int i;
- 
+
   // XOR the current vector with the block before encrypting
   for (i = 0; i < 16; i++) {
     block[i] ^= current_vector[i];
@@ -87,7 +87,7 @@ void decrypt(uint8_t block[16])
 {
   uint8_t temp_vector[16];
   int i;
- 
+
   // Copy the cipher output to the temporary vector
   memcpy(temp_vector, block, 16);
 

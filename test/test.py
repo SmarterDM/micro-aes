@@ -59,20 +59,18 @@ def test_file(file_path, size):
       key = None
       plainText = None
       cipherText = None
-      
-  return
 
-test_file(files[0][0], 256)
-test_file(files[0][1], 256)
-test_file(files[0][2], 256)
+  # return
 
-test_file(files[1][0], 192)
-test_file(files[1][1], 192)
-test_file(files[1][2], 192)
 
-test_file(files[2][0], 128)
-test_file(files[2][1], 128)
-test_file(files[2][2], 128)
-
-print str(tests) + " have passed successfully"
-
+if __name__ == '__main__':
+    test_file(files[0][0], 256)
+    test_file(files[0][1], 256)
+    test_file(files[0][2], 256)
+    test_file(files[1][0], 192)
+    test_file(files[1][1], 192)
+    test_file(files[1][2], 192)
+    test_file(files[2][0], 128)
+    test_file(files[2][1], 128)
+    test_file(files[2][2], 128)
+    print "{} have passed successfully".format(tests)
