@@ -1,4 +1,4 @@
- # micro-aes
+# micro-aes
 
 [![GitHub release](https://img.shields.io/github/release/SmarterUM/micro-aes.svg)](https://github.com/SmarterUM/micro-aes/releases/tag/v1.0.0)
 ![C](https://img.shields.io/badge/langauge-C-blue.svg)
