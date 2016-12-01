@@ -24,45 +24,45 @@ def test_file(file_path, size):
     for line in lines:
         if line.startswith("KEY"):
             key = line[len("KEY = "):].strip()
-    elif line.startswith("PLAINTEXT"):
-      plainText = line[len("PLAINTEXT = "):].strip()
-    elif line.startswith("CIPHERTEXT"):
-      cipherText = line[len("CIPHERTEXT = "):].strip()
-    elif line.startswith("[DECRYPT]"):
-      decrypt = 1
+        elif line.startswith("PLAINTEXT"):
+            plainText = line[len("PLAINTEXT = "):].strip()
+        elif line.startswith("CIPHERTEXT"):
+            cipherText = line[len("CIPHERTEXT = "):].strip()
+        elif line.startswith("[DECRYPT]"):
+            decrypt = 1
 
-    if key != None and plainText != None and cipherText != None:
-        command = "./encrypt -k " + key
+    if key is not None and plainText is not None and cipherText is not None:
+        command = "./encrypt -k {}".format(key)
 
-      if decrypt:
+    if decrypt:
         command += " -b " + cipherText + " -d"
-      else:
+    else:
         command += " -b " + plainText
 
-      command += " -s " + str(size)
+    command += " -s " + str(size)
 
-      output = subprocess.check_output(command, shell=True).strip()
+    output = subprocess.check_output(command, shell=True).strip()
 
-      if decrypt:
+    if decrypt:
         if output.upper() != plainText.upper():
-          print "Failed decrypting " + cipherText + " to " + plainText.upper()
-          print "Got: " + output.upper()
-          print "Key: " + key
-          sys.exit(1)
-      else:
-        if output.upper() != cipherText.upper():
-          print "Failed encrypting " + plainText + " to " + cipherText.upper()
-          print "Got: " + output.upper()
-          print "Key: " + key
-          sys.exit(1)
+            print 'Failed decrypting {} to {}'.format(cipherText, plainText.upper())
+            print "Got: {}".format(output.upper())
+            print "Key: {}".format(key)
+            sys.exit(1)
+    else:
+        if output.upper() is not cipherText.upper():
+            print 'Failed encrypting {} to {}'.format(plainText, cipherText.upper())
+            print "Got: {}".format(output.upper())
+            print "Key: {}".format(key)
+            sys.exit(1)
 
-      tests = tests + 1
+    tests = tests + 1
 
-      key = None
-      plainText = None
-      cipherText = None
+    key = None
+    plainText = None
+    cipherText = None
 
-  return
+    return
 
 test_file(files[0][0], 256)
 test_file(files[0][1], 256)
