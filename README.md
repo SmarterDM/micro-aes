@@ -1,17 +1,17 @@
 # micro-aes
 
-[![GitHub release](https://img.shields.io/github/release/SmarterUM/micro-aes.svg)](https://github.com/SmarterUM/micro-aes/releases/tag/v1.0.0)
+[![GitHub release](https://img.shields.io/github/release/SmarterDM/micro-aes.svg)](https://github.com/SmarterDM/micro-aes/releases/tag/v1.0.0)
 ![C](https://img.shields.io/badge/langauge-C-blue.svg)
-[![Build Status](https://travis-ci.org/SmarterUM/micro-aes.svg?branch=master)](https://travis-ci.org/SmarterUM/micro-aes)
-[![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/SmarterUM/micro-aes/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/SmarterDM/micro-aes.svg?branch=master)](https://travis-ci.org/SmarterDM/micro-aes)
+[![MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/SmarterDM/micro-aes/blob/master/LICENSE)
 
 A permissively licensed Advanced Encryption Standard (AES) implementation optimised for running on micro-controllers.
 
-This library has been developed and open sourced by [AndrewCarterUK ![(Twitter)](http://i.imgur.com/wWzX9uB.png)](https://twitter.com/AndrewCarterUK) from [Smart Carbon Control](http://www.smartcarboncontrol.com/). We are always on the lookout for programming talent, so please [message me](https://twitter.com/AndrewCarterUK) if you are interested in this sort of work.
+This library has been developed and open sourced by [AndrewCarterUK ![(Twitter)](http://i.imgur.com/wWzX9uB.png)](https://twitter.com/AndrewCarterUK) from [SmarterDM](https://smarterdm.com/). We are always on the lookout for programming talent, so please [message me](https://twitter.com/AndrewCarterUK) if you are interested in this sort of work.
 
 ## License
 
-Like all technology firms, here at [Smart Carbon Control](http://www.smartcarboncontrol.com/) we rely heavily on open source software. In turn, we like to contribute back to the open source community when we can. This library is provided free of charge, under the terms of the [MIT license](https://github.com/SmarterUM/micro-aes/blob/master/LICENSE).
+Like all technology firms, here at [SmarterDM](https://smarterdm.com/) we rely heavily on open source software. In turn, we like to contribute back to the open source community when we can. This library is provided free of charge, under the terms of the [MIT license](https://github.com/SmarterDM/micro-aes/blob/master/LICENSE).
 
 Although there is no obligation to do so, we would really appreciate it if you could [get in touch](https://twitter.com/AndrewCarterUK) and let us know how you are using our software.
 
