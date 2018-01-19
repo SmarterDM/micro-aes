@@ -266,7 +266,7 @@ void aes_InvShiftRows(uint8_t state[16])
 void aes_MixColumns(uint8_t state[16])
 {
   counter i = 4;
-  uint8_t new_state[4], tmp;
+  uint8_t new_state[4];
 
   while (i--) {
     new_state[0] = MUL2(state[MAP(0,i)]) ^ MUL3(state[MAP(1,i)]) ^      state[MAP(2,i)]  ^      state[MAP(3,i)] ;
@@ -284,7 +284,7 @@ void aes_MixColumns(uint8_t state[16])
 void aes_InvMixColumns(uint8_t state[16])
 {
   counter i = 4;
-  uint8_t new_state[4], tmp;
+  uint8_t new_state[4];
 
   while (i--) {
     new_state[0] = MUL(14, state[MAP(0,i)]) ^ MUL(11, state[MAP(1,i)]) ^ MUL(13, state[MAP(2,i)]) ^ MUL( 9, state[MAP(3,i)]);
@@ -334,4 +334,3 @@ uint8_t aes_GaloisFieldMultiply(uint8_t fixed, uint8_t variable)
 
   return result;
 }
-
